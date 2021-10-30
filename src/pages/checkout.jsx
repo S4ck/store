@@ -15,7 +15,7 @@ const Checkout = () => {
     Router.replace("/");
     return (
       <>
-        <p>Loading...</p>
+        <p>Cargando...</p>
       </>
     );
   }
@@ -27,7 +27,7 @@ const Checkout = () => {
 
         <Box as="main" py="8">
           <Heading as="h2" size="xl" textAlign="center">
-            CHECKOUT
+            CAJA
           </Heading>
 
           <Flex w={["100%", "80%", "90%", "80%"]} mx="auto" justify="center" mt="8" wrap="wrap">
