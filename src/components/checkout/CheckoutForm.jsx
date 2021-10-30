@@ -37,11 +37,11 @@ function CheckoutForm() {
     <>
       <Box w={["100%", "80%", "46%", "40%"]} height="max-content" bg="white" p="4" mx="2" order={["1", "1", "0"]} mt={["6", "6", "0"]}>
         <Heading as="h3" size="md" textAlign="center">
-          Your Options
+          Tus Opciones
         </Heading>
         <Flex as="form" p="2" direction="column" onSubmit={handleSubmit(onSubmit)}>
           <Flex justify="center" align="center" mt="6">
-            <FormLabel htmlFor="delivery">With Delivery?</FormLabel>
+            <FormLabel htmlFor="delivery">Con Delivery?</FormLabel>
             <Switch id="delivery" color="teal" defaultIsChecked onChange={() => setDelivery(!delivery)} />
           </Flex>
 
@@ -50,7 +50,7 @@ function CheckoutForm() {
             <Input
               type="text"
               name="name"
-              placeholder="Your Name"
+              placeholder="Tu Nombre"
               variant="filled"
               ref={register(validations.name)}
               isInvalid={errors.name ? true : false}
@@ -67,7 +67,7 @@ function CheckoutForm() {
             <Input
               type="phone"
               name="phone"
-              placeholder="Phone Number"
+              placeholder="Tu Celular"
               variant="filled"
               ref={register(validations.phone)}
               isInvalid={errors.phone ? true : false}
@@ -86,7 +86,7 @@ function CheckoutForm() {
                 <Input
                   type="text"
                   name="address"
-                  placeholder="Your Address"
+                  placeholder="Tu Dirección"
                   variant="filled"
                   ref={register(validations.address)}
                   isInvalid={errors.address ? true : false}
@@ -102,16 +102,16 @@ function CheckoutForm() {
                 <InputLeftElement children={<PseudoBox as={BiMapAlt} size="24px" color="bluex.400" />} />
                 <Select
                   variant="filled"
-                  placeholder="-- Chose a City --"
+                  placeholder="-- Selecciona tu Ciudad --"
                   pl="40px"
                   name="city"
                   ref={register(validations.city)}
                   isInvalid={errors.city ? true : false}
                 >
-                  <option value="option1">City 1</option>
-                  <option value="option2">City 2</option>
-                  <option value="option3">City 3</option>
-                  <option value="option4">City 4</option>
+                  <option value="option1">Carquín</option>
+                  <option value="option2">Huacho</option>
+                  <option value="option3">Hualmay</option>
+                  <option value="option4">Huaura</option>
                 </Select>
               </InputGroup>
               {errors.city && (
@@ -124,15 +124,15 @@ function CheckoutForm() {
                 <InputLeftElement children={<PseudoBox as={BiTime} size="24px" color="bluex.400" />} />
                 <Select
                   variant="filled"
-                  placeholder="-- Chose a Schedule --"
+                  placeholder="-- Elegir un Horario --"
                   pl="40px"
                   name="schedule"
                   ref={register(validations.schedule)}
                   isInvalid={errors.schedule ? true : false}
                 >
-                  <option value="option1">Option 1</option>
-                  <option value="option2">Option 2</option>
-                  <option value="option3">Option 3</option>
+                  <option value="option1">Desayuno</option>
+                  <option value="option2">Almuerzo</option>
+                  <option value="option3">Cena 3</option>
                   <option value="option4">Option 4</option>
                 </Select>
               </InputGroup>
@@ -149,7 +149,7 @@ function CheckoutForm() {
             <Input
               type="text"
               name="comment"
-              placeholder="Extra Comment"
+              placeholder="Nota al Restaurante"
               variant="filled"
               ref={register(validations.comment)}
               isInvalid={errors.comment ? true : false}
