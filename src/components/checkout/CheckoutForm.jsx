@@ -130,10 +130,10 @@ function CheckoutForm() {
                   ref={register(validations.schedule)}
                   isInvalid={errors.schedule ? true : false}
                 >
-                  <option value="option1">Desayuno</option>
-                  <option value="option2">Almuerzo</option>
-                  <option value="option3">Cena 3</option>
-                  <option value="option4">Option 4</option>
+                  <option value="option1">Desayuno 8-10 am</option>
+                  <option value="option2">Almuerzo 12-2 pm</option>
+                  <option value="option3">Cena 6-10 pm</option>
+                  <option value="option4">Coloca tu horario</option>
                 </Select>
               </InputGroup>
               {errors.schedule && (
@@ -162,7 +162,7 @@ function CheckoutForm() {
           )}
 
           <Button type="submit" w="100%" variantColor="green" size="lg" mt="6">
-            CONFIRM
+            CONFIRMAR
           </Button>
         </Flex>
       </Box>
