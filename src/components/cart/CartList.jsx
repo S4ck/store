@@ -11,9 +11,9 @@ function CartList() {
       <Alert status="info" variant="solid" flexDirection="column" justifyContent="center" textAlign="center" height="200px" mt="8">
         <AlertIcon size="40px" mr={0} />
         <AlertTitle mt={4} mb={1} fontSize="lg">
-          No Items Added Yet!
+          ¡Aún no se han añadido artículos!
         </AlertTitle>
-        <AlertDescription maxWidth="sm">Lorem ipsum dolor sit amet consectetur adipisicing elit</AlertDescription>
+        <AlertDescription maxWidth="sm">Agrega un rico y delicioso ceviche a tu lista...¡¡¡</AlertDescription>
       </Alert>
     );
   }
