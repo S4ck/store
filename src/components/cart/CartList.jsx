@@ -11,7 +11,7 @@ function CartList() {
       <Alert status="info" variant="solid" flexDirection="column" justifyContent="center" textAlign="center" height="200px" mt="8">
         <AlertIcon size="40px" mr={0} />
         <AlertTitle mt={4} mb={1} fontSize="lg">
-          ¡Aún no se han añadido artículos!
+          ¡Aún no decides que comer...!
         </AlertTitle>
         <AlertDescription maxWidth="sm">Agrega un rico y delicioso ceviche a tu lista...¡¡¡</AlertDescription>
       </Alert>
