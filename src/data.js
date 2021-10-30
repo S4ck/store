@@ -11,7 +11,7 @@ export default [
   {
     id: "2",
     title: "Arroz con Mariscos: 
-    <div Deliciosos ingredientes"></div>,
+    <div>"Deliciosos ingredientes"</div>,
     price: 15.99,
     offerPrice: 13.99,
     stock: 12,
