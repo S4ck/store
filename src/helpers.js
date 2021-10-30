@@ -10,19 +10,19 @@ export const getFormValidations = () => {
     name: {
       required: {
         value: true,
-        message: "Tu Nombre es Requerido",
+        message: "Name is required",
       },
       maxLength: {
         value: 20,
-        message: "Max 20 Caracteres",
+        message: "Max Length 20 chars",
       },
       minLength: {
         value: 5,
-        message: "Min 5 Caracteres",
+        message: "Min Length 5 chars",
       },
       pattern: {
         value: /^[A-Za-z ]{5,20}$/,
-        message: "Nombre Incorrecto",
+        message: "Icorrect Name",
       },
     },
 
@@ -30,59 +30,59 @@ export const getFormValidations = () => {
     phone: {
       required: {
         value: true,
-        message: "Tu Teléfono es Requerido",
+        message: "Phone is required",
       },
       maxLength: {
-        value: 10,
-        message: "Max 10 Caracteres",
+        value: 20,
+        message: "Max Length 20 chars",
       },
       minLength: {
-        value: 9,
-        message: "Min 9 Caracteres",
+        value: 5,
+        message: "Min Length 5 chars",
       },
       pattern: {
-        value: /^[0-9]{9,10}$/,
-        message: "Teléfono Incorrecto",
+        value: /^[0-9]{5,20}$/,
+        message: "Icorrect Phone",
       },
     },
     //address
     address: {
       required: {
         value: true,
-        message: "Dirección Requerida",
+        message: "Address is required",
       },
       maxLength: {
         value: 20,
-        message: "Max 20 caracteres",
+        message: "Max Length 20 chars",
       },
       minLength: {
         value: 5,
-        message: "Min 5 caracteres",
+        message: "Min Length 5 chars",
       },
       pattern: {
         value: /^[0-9a-zA-Z ]{5,20}$/,
-        message: "Dirección Incorrecta",
+        message: "Icorrect Address",
       },
     },
     //city
     city: {
       required: {
         value: true,
-        message: "Ciudad Requerida",
+        message: "City is required",
       },
     },
     //schedule
     schedule: {
       required: {
         value: true,
-        message: "Horario Requerido",
+        message: "Schedule is required",
       },
     },
     //extra comment
     comment: {
       maxLength: {
         value: 25,
-        message: "Max 25 caracteres",
+        message: "Max Length 25 chars",
       },
     },
   };
@@ -108,7 +108,7 @@ export function getWspUrl(orderData) {
     withDelivery ? "Address" + "%3A%2A%20" + address + " %0A%0A%2A" : ""
   }${withDelivery ? "City" + "%3A%2A%20" + city + "%0A%0A%2A" : ""}${
     withDelivery ? "Schedule" + "%3A%2A%20" + schedule + "%0A%0A%2A" : ""
-  }${comment ? "Comment" + "%3A%2A%20" + comment + "%0A%0A%2A" : ""}${"Item list"}%3A%2A${cartListforUrl}%0A%0A%2A${
+  }${comment ? "Comment" + "%3A%2A%20" + comment + "%0A%0A%2A" : ""}${"Items List"}%3A%2A${cartListforUrl}%0A%0A%2A${
     withDelivery ? "Sub Total" + "%3A%2A%20$" + subTotal + " %0A%0A%2A" : ""
   }${withDelivery ? "Delivery Fee" + "%3A%2A%20$" + shippingCost + " %0A%0A%2A" : ""}${"Total"}%3A%2A%20${total}%0A%0A`;
 
