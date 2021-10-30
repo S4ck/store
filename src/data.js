@@ -1,11 +1,11 @@
 export default [
   {
     id: "1",
-    title: "Apples x lb",
-    price: 2.1,
+    title: "Ceviche Mixto",
+    price: 6,
     offerPrice: null,
     stock: 12,
-    img: "apples.jpg",
+    img: "ceviche.jpg",
     category: "fruits",
   },
   {
