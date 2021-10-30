@@ -65,11 +65,11 @@ export default function ItemCard({ item }) {
         <Box w="85%" my="3">
           <Flex align="flex-end">
             <Text fontSize="md" fontWeight="medium">
-              ${offerPrice || price}
+              S/{offerPrice || price}
             </Text>
             {offerPrice && (
               <Text ml="1" fontSize="sm" fontWeight="medium" as="del" color="gray.400">
-                ${price}
+                S/{price}
               </Text>
             )}
           </Flex>
