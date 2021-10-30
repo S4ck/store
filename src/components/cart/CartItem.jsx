@@ -19,13 +19,13 @@ export default function CartItem({ item }) {
           {title}
         </Text>
 
-        <Text fontSize="sm">Unit Price ${offerPrice || price}</Text>
+        <Text fontSize="sm">Precio Unidad S/{offerPrice || price}</Text>
 
         <CounterBtn type="cart" item={item} />
       </Box>
 
       <Text fontSize="lg" fontWeight="medium" position="absolute" bottom="10px" right="12px">
-        $ {itemTotal}
+        S/ {itemTotal}
       </Text>
 
       <CloseButton size="sm" position="absolute" top="10px" right="12px" onClick={() => setCart({ item, n: 0 })} />
