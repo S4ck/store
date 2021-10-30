@@ -13,7 +13,7 @@ function CartFooter() {
         Sub Total: S/{subTotal.toFixed(2)}
       </Text>
       <Button onClick={() => router.push("/checkout")} w="100%" variantColor="bluex" size="lg" disabled={!subTotal}>
-        CAJA
+        REALIZAR PEDIDO
       </Button>
     </Box>
   );
