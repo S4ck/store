@@ -49,7 +49,7 @@ export default function ItemsGrid() {
       >
         <AlertIcon size="40px" mr={0} />
         <AlertTitle mt={4} mb={1} fontSize="lg">
-          No se encuentra el articulo!
+          Lo sentimos..el cheff se fue de vacaciones..!
         </AlertTitle>
         <AlertDescription maxWidth="sm">Muy pronto nuevos platos para ud.</AlertDescription>
       </Alert>
