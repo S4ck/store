@@ -1,7 +1,7 @@
 export default [
   {
     id: "1",
-    title: "Ceviche Mixto: Preaparados con los mejores ingredientes, calidad y frescura.",
+    title: "Ceviche Mixto: Preparados con los mejores ingredientes, calidad y frescura.",
     price: 8.50,
     offerPrice: 10.00,
     stock: 12,
