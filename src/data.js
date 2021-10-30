@@ -1,18 +1,19 @@
 export default [
   {
     id: "1",
-    title: "Ceviche Mixto",
-    price: 6,
-    offerPrice: null,
+    title: "Ceviche Mixto: Preaparados con los mejores ingredientes, calidad y frescura.",
+    price: 8.50,
+    offerPrice: 10.00,
     stock: 12,
     img: "ceviche.jpg",
-    category: "fruits",
+    category: "frescos",
   },
   {
     id: "2",
-    title: "bliquam feugiat dui non",
-    price: 4.88,
-    offerPrice: 3.88,
+    title: "Arroz con Mariscos: 
+    <div Deliciosos ingredientes"></div>,
+    price: 15.99,
+    offerPrice: 13.99,
     stock: 12,
     img: "baby.jpg",
     category: "vegetable",
